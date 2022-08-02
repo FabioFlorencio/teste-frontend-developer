@@ -8,8 +8,12 @@ html{
     font-size:62.5%; /* A cada 1rem será considerado 10px */
     scroll-behavior:smooth;
 }
-body{
-    font-family:Arial, Helvetica, sans-serif;
+body{           
+    font-family:Arial, Helvetica, sans-serif;            
+    background-image:url(../IMG/lampada1.png);
+	background-size:cover;	    
+	background-repeat:no-repeat;	
+	background-attachment:fixed;
 }
 ul{
     list-style:none;    
@@ -21,12 +25,14 @@ ul{
     position:relative;
     top:0;
     left:0;
-    width:100%;           
-    padding:20px 50px;   
-    background-color:#F00; 
+    padding:20px 50px;       
+    width:100%;               
 }
-.header a{
+.header ul li a{ 
+    color:#FF0;   
+    font-size:2rem;
     text-decoration:none;
+    margin-left:10px;
 }
 .header ul{    
     display:flex;                               
@@ -35,8 +41,7 @@ ul{
     display:flex;
     flex-direction:column;     
     justify-content:center;
-    min-height:300px;
-    background-color:#00F;
+    min-height:300px;    
 }
 .section-headline ul{
     display:flex;    
@@ -53,28 +58,49 @@ form{
 form input{
     margin-bottom:10px;
 }
-.section-quem-somos{    
+.section-sobre-nos{    
     display:flex;
+    flex-direction:column;
     min-height:300px;       
     justify-content:center; 
     align-items:center;      
-    background-color:#0F0;  
+      
 }
-.section-quem-somos div{
-    margin-left:10px;
+.section-sobre-nos hr{
+    width:100%;
+    height:2px;
+    color:#F00;
+    margin:10px 0;
 }
-.section-com-este-servico{
+.section-sobre-nos h3{
+    color:#FF0;
+    font-size:3rem;    
+}
+.section-sobre-nos p{
+    font-size:1.6rem;
+    color:#FFF;
+    text-align:center;
+    padding:10px 0;
+}
+.section-por-que{
     display:flex;      
     flex-direction:column;
     justify-content:space-between;    
     align-items: center;
     min-height:180px; 
     padding:20px 0;
-    background-color:cadetblue;
+
+}
+.section-por-que h3{    
+    font-size:3rem;
+    color:#FF0;
+    margin-bottom: 10px;
 }
 .grid{
     display:flex; 
-    width:400px;        
+    width:100%; 
+    min-height:200px;
+    background-color:cadetblue;       
 }
 .section-perguntas{
     display:flex;
@@ -95,13 +121,34 @@ form input{
 }
 .section-final{
     display:flex;
-    justify-content:center;
+    flex-direction:column; 
+    text-align: center;       
     min-height:100px;
     padding-top:10px;
-    background-color:darkgray;
+    background-color:#FF0;
 }
-.chamada-final{
-    margin-left:10px;
+.section-final h3{
+    color:dodgerblue;
+    font-size:3rem;
+    background-color:#000;
+}
+.conheca{
+    display: flex;   
+    justify-content: space-evenly;    
+    text-align: center;
+    padding:20px 0;
+}
+.conheca p{
+    color:#F00;
+}
+.servicos-1,.servicos-2,.servicos-3{
+    color:dodgerblue;
+    font-size:2rem;    
+}
+.servicos-1 h3,.servicos-2 h3,.servicos-3 h3{
+    color:#F00;
+    font-size:2rem;
+    margin:20px;
 }
 .footer{
     display:flex;
@@ -114,6 +161,9 @@ form input{
 .footer p{
     color:#FFF;
 }
+
+/*=====  Media queries =====*/
+
 
 
 
