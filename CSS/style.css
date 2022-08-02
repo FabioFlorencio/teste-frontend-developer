@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing:border-box;
+}
+html{
+    font-size:62.5%; /* A cada 1rem será considerado 10px */
+    scroll-behavior:smooth;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style:none;    
+}   
+.header{    
+    display:flex;
+    justify-content:space-between;   
+    align-items:center;                   
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;           
+    padding:20px 50px;   
+    background-color:#F00; 
+}
+.header a{
+    text-decoration:none;
+}
+.header ul{    
+    display:flex;                               
+}
+.section-headline{
+    display:flex;
+    flex-direction:column;     
+    justify-content:center;
+    min-height:300px;
+    background-color:#00F;
+}
+.section-headline ul{
+    display:flex;    
+    justify-content:center; 
+    padding-top:10px;
+}
+form{
+    display:flex;
+    flex-direction:column;
+    width:300px;
+    height:auto;        
+    margin-left: 10px;    
+}
+form input{
+    margin-bottom:10px;
+}
+.section-quem-somos{    
+    display:flex;
+    min-height:300px;       
+    justify-content:center; 
+    align-items:center;      
+    background-color:#0F0;  
+}
+.section-quem-somos div{
+    margin-left:10px;
+}
+.section-com-este-servico{
+    display:flex;      
+    flex-direction:column;
+    justify-content:space-between;    
+    align-items: center;
+    min-height:180px; 
+    padding:20px 0;
+    background-color:cadetblue;
+}
+.grid{
+    display:flex; 
+    width:400px;        
+}
+.section-perguntas{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding-top:10px;
+}
+.section-perguntas{
+    padding:10px 0;
+}
+.section-perguntas div{
+    margin:10px 0;
+}
+.pergunta-1,.pergunta-2,.pergunta-3,.pergunta-4,.pergunta-5{
+    background-color: crimson;
+    padding:20px 0;
+}
+.section-final{
+    display:flex;
+    justify-content:center;
+    min-height:100px;
+    padding-top:10px;
+    background-color:darkgray;
+}
+.chamada-final{
+    margin-left:10px;
+}
+.footer{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center ;
+    min-height:50px;
+    background-color:#000;
+}
+.footer p{
+    color:#FFF;
+}
+
+
+
