@@ -6,13 +6,12 @@
 }
 html{
     font-size:62.5%; /* A cada 1rem será considerado 10px */
-    scroll-behavior:smooth;
+    scroll-behavior:smooth;    
 }
 body{           
     font-family:Arial, Helvetica, sans-serif;            
-    background-image:url(../IMG/lampada1.png);
-	background-size:cover;	    
-	background-repeat:no-repeat;	
+    background:url(../IMG/lamp1.jpg) no-repeat;
+	background-size:cover;	    		
 	background-attachment:fixed;
 }
 ul{
@@ -30,13 +29,14 @@ ul{
 }
 .header ul li a{ 
     color:#FF0;   
-    font-size:2rem;
+    font-size:2rem;    
     text-decoration:none;
     margin-left:10px;
 }
 .header ul{    
     display:flex;                               
 }
+/* ===== section-headline ===== */
 .section-headline{
     display:flex;
     flex-direction:column;     
@@ -48,23 +48,52 @@ ul{
     justify-content:center; 
     padding-top:10px;
 }
-form{
+form{/*==== Formulário ====*/
     display:flex;
     flex-direction:column;
-    width:300px;
-    height:auto;        
-    margin-left: 10px;    
+    width:300px;    
+    padding:20px;       
+    margin-left: 10px;        
+    background-color:rgb(255,255,255);opacity:0.8;
 }
-form input{
+label{
+    text-align: center;
+    padding:10px 0 10px 10px;
+    font-weight:bolder;
+    text-transform:uppercase;
+}
+input,textarea{
+    font-weight:bolder;
+    text-transform:uppercase;
+    padding:10px 0 10px 10px;
     margin-bottom:10px;
 }
+button{     
+    font-weight:bolder;
+    color:#FFF;
+    padding: 10px 0;
+    cursor:pointer;
+    border:1px solid cornflowerblue;
+    border-radius:10px;
+    background-color:cornflowerblue;
+}
+button:hover{
+    color:#F00;
+    background-color:#FFF;
+    transition: 0.8s;    
+}
+
+/* ===== section-sobre-nos ===== */
 .section-sobre-nos{    
     display:flex;
     flex-direction:column;
     min-height:300px;       
     justify-content:center; 
-    align-items:center;      
-      
+    align-items:center;            
+}
+.section-sobre-nos h3{
+    color:dodgerblue;
+    font-size:3rem;    
 }
 .section-sobre-nos hr{
     width:100%;
@@ -72,16 +101,16 @@ form input{
     color:#F00;
     margin:10px 0;
 }
-.section-sobre-nos h3{
-    color:#FF0;
-    font-size:3rem;    
+.section-sobre-nos div{
+    max-width:800px;
 }
 .section-sobre-nos p{
     font-size:1.6rem;
     color:#FFF;
-    text-align:center;
+    text-align:justify;
     padding:10px 0;
 }
+/*===== section-por-que =====*/
 .section-por-que{
     display:flex;      
     flex-direction:column;
@@ -89,7 +118,6 @@ form input{
     align-items: center;
     min-height:180px; 
     padding:20px 0;
-
 }
 .section-por-que h3{    
     font-size:3rem;
@@ -97,17 +125,63 @@ form input{
     margin-bottom: 10px;
 }
 .grid{
-    display:flex; 
-    width:100%; 
-    min-height:200px;
-    background-color:cadetblue;       
+    display:flex;      
+    align-items: center;    
+    min-height:200px;        
+              
 }
+.grid-principal{
+    display:flex; 
+    align-items:center;    
+    width:100%; 
+    min-height:100px;
+    margin-left:10px; 
+    background-color:#fF0;          
+    opacity:0.8;
+}
+.grid-principal i{/*==== Icones ====*/
+    padding-left:10px;
+    font-size:3rem;
+}
+.grid-principal h4{
+    font-size:1.6rem;
+    padding:0 0 10px 10px;
+}
+.grid-principal p{
+    font-size:1.6rem;
+    text-align: left;    
+    padding-left:10px;
+}
+/*===== section-perguntas =====*/
 .section-perguntas{
     display:flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
     padding-top:10px;
+}
+.btn-efeito{
+    cursor:pointer;
+    outline:none;
+    width:30%;        
+    color:#444;
+    font-size:1.6rem;
+    text-align:center;
+    padding: 18px;
+    transition:0.5s;    
+    border:none;
+    background-color:#EEE;
+}
+.painel{
+    width:30%;
+    max-height:0px;
+    overflow:hidden;
+    padding:0 18px;
+    transition: max-height 0.3s ease-in-out;
+    background-color:#FFF;
+}
+.selecionado, .btn-efeito:hover{
+    background-color:#CCC;
 }
 .section-perguntas{
     padding:10px 0;
@@ -119,7 +193,7 @@ form input{
     background-color: crimson;
     padding:20px 0;
 }
-.section-final{
+.section-conheca{
     display:flex;
     flex-direction:column; 
     text-align: center;       
@@ -127,18 +201,18 @@ form input{
     padding-top:10px;
     background-color:#FF0;
 }
-.section-final h3{
+.section-conheca h3{
     color:dodgerblue;
     font-size:3rem;
     background-color:#000;
 }
-.conheca{
+.grid-conheca{
     display: flex;   
     justify-content: space-evenly;    
     text-align: center;
     padding:20px 0;
 }
-.conheca p{
+.grid-conheca p{
     color:#F00;
 }
 .servicos-1,.servicos-2,.servicos-3{
@@ -150,17 +224,38 @@ form input{
     font-size:2rem;
     margin:20px;
 }
-.footer{
+/*==== Footer ====*/
+footer{        
     display:flex;
     flex-direction:column;
-    justify-content:center;
-    align-items: center ;
-    min-height:50px;
-    background-color:#000;
+    align-items:center;
+    padding:50px 0;
+    background-color:#191C03;
 }
-.footer p{
-    color:#FFF;
+footer ul{
+    display:flex;
+    margin-bottom:25px;
 }
+footer ul li{
+    margin-right:10px;
+}
+footer ul li:last-child{
+    margin-right:0;    
+}
+footer ul li a{     /* === Icon ===*/
+    color:#C3C63B;    
+    font-size:3.2rem;
+}
+footer ul li a:hover{ 
+    opacity:0.4;     
+    transition:0.5s;       
+}
+footer p{
+    color:#C3C63B;
+    font-size:1.6rem;
+    text-align:center;
+}
+
 
 /*=====  Media queries =====*/
 
