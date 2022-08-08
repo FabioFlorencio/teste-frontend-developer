@@ -208,6 +208,19 @@ section-por-que
     text-align: left;    
     padding-left:10px;
 }
+.section-por-que a{
+    color:#FFF;
+    font-size:2rem;
+    padding:10px 20px;
+    transition:0.8s;
+    border-radius:50px;
+    border:3px solid #E1E105;            
+    background-color:#F00;
+}
+.section-por-que a:hover{        
+    transition:0.8s;
+    background-color:#000;
+}
 [data-anima]{/*====  Animacao (section-por-que / section-fotos/grid)====*/
     opacity:0;
     transition: 1.2s;
@@ -283,32 +296,6 @@ section-1-chamada
 }
 /*
 ==============================================
-section-2-chamada
-==============================================
-*/
-.section-2-chamada{
-    display:flex;
-    flex-direction:column;        
-    align-items: center;    
-    padding-top:10px;            
-}
-.section-2-chamada h3{    
-    text-align:center;
-    color:#FFF;
-    font-size:3rem;
-    padding:10px 40px;
-    margin:80px 0;    
-    border:solid 5px #FF0;
-    border-radius:0 20px;
-    background-color:#000;
-    box-shadow:18px 20px 8px rgba(0, 0, 0, 0.8);
-    /*1 - Distancia horizontal da sombra
-	  2 - Distancia vertical da sombra
-	  3 - blur embassamento da sombra
-	  4 - cor da sombra	  */
-}
-/*
-==============================================
 section-perguntas
 ==============================================
 */
@@ -355,8 +342,8 @@ section-perguntas
     transition: 0.3s ease-in-out;
     background-color:#FFF;
 }
-.selecionado, .btn-efeito:hover{
-    background-color:t#FF0;
+.btn-efeito:hover{
+    background-color:#FF0;
 }
 .section-perguntas{
     padding:10px 0;
@@ -372,6 +359,33 @@ section-perguntas
     background-color: crimson;
     padding:20px 0;
 }
+/*
+==============================================
+section-2-chamada
+==============================================
+*/
+.section-2-chamada{
+    display:flex;
+    flex-direction:column;        
+    align-items: center;    
+    padding-top:10px;            
+}
+.section-2-chamada h3{    
+    text-align:center;
+    color:#FFF;
+    font-size:3rem;
+    padding:10px 40px;
+    margin:80px 0;    
+    border:solid 5px #FF0;
+    border-radius:0 20px;
+    background-color:#000;
+    box-shadow:18px 20px 8px rgba(0, 0, 0, 0.8);
+    /*1 - Distancia horizontal da sombra
+	  2 - Distancia vertical da sombra
+	  3 - blur embassamento da sombra
+	  4 - cor da sombra	  */
+}
+
 /*
 ==============================================
 section-endline
@@ -393,7 +407,9 @@ form{/*==== Formulario ====*/
     max-width:500px;   
     height:450px; 
     padding:20px;       
-    margin-left: 10px;            
+    margin-left: 10px;  
+    border-radius:30px;
+    background-color:rgba(255, 255, 255, 0.4);                 
 }
 label{
     color:#E1E105;
@@ -409,7 +425,8 @@ input,textarea{
     text-transform:uppercase;
     padding:10px 0 10px 10px;
     margin-bottom:10px;
-    background-color:rgba(255, 255, 255, 0.8);
+    border-radius:20px;
+    background-color:rgba(255, 255, 255, 0.8);    
 }
 textarea{
     resize:none;
